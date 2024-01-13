@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>My website</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+<header data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="scrollToSection('about')">About me</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="scrollToSection('edu')">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="scrollToSection('skills')">Skills</a>
+          </li>         
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="bg4.jpg" class="d-block w-100" alt="Image Alt Text">
+            <div class="overlay-image img-circle">
+              <img src="myfav.jpg" alt="Overlay Image" width="100" height="100">
+          </div>
+            <div class="container">
+
+                <div class="carousel-caption text-start">
+                    <h5>Welcome! I'm Rohith Reddy , a tech enthusiast passionate about coding and continuous learning. Explore my digital space where curiosity meets code. Let's connect and explore the endless possibilities in the world of technology!</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="rounded-circle overflow-hidden">
+            <img src="leetcode.png" class="bd-placeholder-img rounded-circle" alt="Your Image" width="140" height="140">
+        </div>
+        <h2 class="fw-normal">Leetcode</h2>
+        <p>Hello there! 👋 , I have successfully tackled over 190 coding challenges, honing my skills in algorithms and data structures. Achieving the coveted 50 Days Badge is a testament to my dedication and consistent commitment to the art of problem-solving.</p>
+        <p><a class="btn btn-secondary" href="https://leetcode.com/rohith_bandi/">Let's Go &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    
+      <div class="col-lg-4">
+        <div class="rounded-circle overflow-hidden">
+            <img src="github.jpg" class="bd-placeholder-img rounded-circle" alt="Your Image" width="140" height="140">
+        </div>
+        <h2 class="fw-normal">Github</h2>
+        <p>Diverse project portfolio, including a high-performance C project addressing specific challenges, two versatile Python projects showcasing data manipulation expertise, an engaging HTML/CSS project with a visually appealing UI, and a secure Hyperledger blockchain solution emphasizing smart contracts and decentralization.</p>
+        <p><a class="btn btn-secondary" href="https://github.com/rohith-bandi">Let's Go &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-lg-4">
+        <div class="rounded-circle overflow-hidden">
+            <img src="linkedin.jpeg" class="bd-placeholder-img rounded-circle" alt="Your Image" width="140" height="140">
+        </div>
+        <h2 class="fw-normal">Linkedin</h2>
+        <p>Actively learning and seeking opportunities to apply classroom knowledge in real-world projects. Eager to connect with fellow students, mentors, and professionals to explore and grow in the coding community. Let's connect and learn together!</p>
+        <p><a class="btn btn-secondary" href="https://www.linkedin.com/in/bandi-rohith-reddy-3b7514287/">Let's Go&raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div id="about" class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">About Me</h2>
+        <p class="lead">Hello, I'm Bandi Rohith Reddy, and I'm passionate about exploring the realms of technology through coding. As a dedicated coder, I find joy in solving complex problems and building innovative solutions. Beyond the screen, I indulge in the art of drawing, channeling my creativity into visual expressions. Join me on this journey where technology meets creativity, and let's create something amazing together!</p>
+      </div>
+      <div class="col-md-5">
+        <img src="about.jpg" alt="Your Photo" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+      </div>
+    </div>
+    
+
+    <hr class="featurette-divider">
+
+    <div id="edu" class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">MY EDUCATION</h2>
+        <p class="lead">I completed my primary education up to 8th grade at St. Ann's High School and continued my 9th and 10th grades at TS Model School, achieving a perfect 10 CGPA. Subsequently, I pursued my intermediate studies at Narayana, securing 986 marks. Currently, I am in my second year of B.Tech at KMIT, maintaining a commendable 9.5 CGPA.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="education.jpg" alt="Your Photo" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div id="skills" class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">MY SKILLS</h2>
+        <p class="lead">I possess a diverse skill set in programming languages, including C, Python, and C++. On the web development side, I'm adept at HTML, CSS, and JavaScript, with proficiency in server-side development using Node.js and Express. Furthermore, I have experience working with Hyperledger Fabric, showcasing my interest in blockchain technology. While I may not label myself as an expert, I am enthusiastic about learning and continuously expanding my skills in the dynamic field of technology.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="skills.webp" alt="Your Photo" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+  </footer>
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function scrollToSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+</script>
+
+
+    </body>
+</html>
