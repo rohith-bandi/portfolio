@@ -65,7 +65,7 @@ body {
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
   .carousel-caption p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 0rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
@@ -75,6 +75,13 @@ body {
     margin-top: 80px;
   }
 }
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
 
 
 
@@ -155,13 +162,13 @@ body {
   display: block !important;
 }
 
+/* Default styles */
 .img-circle {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
-  width: 80%; /* Adjust as needed */
-  max-width: 250px; /* Set a maximum width if necessary */
-  height: auto;
+  width: 250px; /* Set your desired width */
+  height: 250px; /* Set your desired height */
   box-shadow: 0 0 0 4px #fff; /* Add a box-shadow to simulate a border */
 }
 
@@ -172,38 +179,25 @@ body {
 
 .overlay-image {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
   transform: translate(-50%, -50%);
 }
 
 .overlay-image img {
   width: 100%;
   height: auto;
-  border-radius: 50%;
+  border-radius: 50%; /* Apply circular frame to the overlay image */
+}
+@media(max-width:40rem){
+  .carousel-item {
+    height: 10rem;
+  }
 }
 
-/* For smaller screens, adjust the styling */
-@media (max-width: 768px) {
-  .img-circle {
-    width: 70%; /* Adjust as needed for smaller screens */
-    max-width: 300px; /* Set a maximum width if necessary */
-    margin: 0 auto; /* Center the image */
-    display: block;
-  }
-
-  .overlay-image {
-    top: 50%; /* Adjust as needed for smaller screens */
-    transform: translate(-50%, -50%);
-  }
-
-  .carousel-caption {
-    text-align: center; /* Center the text */
-    max-width: 100%;
-    margin: 0 auto; /* Center the caption */
-  }
-
-  .carousel-caption h5 {
-    font-size: 1rem; /* Adjust as needed for smaller screens */
+@media(max-width:62rem){
+  .carousel-item {
+    height:15rem;
   }
 }
+
