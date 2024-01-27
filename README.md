@@ -11,7 +11,6 @@ Features :
 -----------
 Responsive design for various screen sizes.
 Project showcase with descriptions and links.
-Contact form for inquiries.
 
 
 Technologies Used :
