@@ -2,35 +2,44 @@
 -----------
 
 
-Description :
+## Description :
 -------------
-My Awesome Website is a personal portfolio website showcasing my projects and skills. It is designed to highlight my coding abilities and projects to potential employers or clients.
+- My Awesome Website is a personal portfolio website showcasing my projects and skills. It is designed to highlight my coding abilities and projects to potential employers or clients.
 
 
-Features :
+## Features :
 -----------
-Responsive design for various screen sizes.
-Project showcase with descriptions and links.
+- Responsive design for various screen sizes.
+- Project showcase with descriptions and links.
 
 
-Technologies Used :
+## Technologies Used :
 ------------------
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
 
-Installation :
+## Installation and Deploying :
 --------------
-Clone/download the repository.
-Open the index.html file in your web browser.
+### Clone the Repository
+``` bash
+ git clone https://github.com/rohith-bandi/portfolio
+```
+### Navigate to the Directory
+``` bash
+ cd portfolio
+ start index.html 
+```
 
 
-Usage :
---------
-Navigate through the website using the provided links and buttons.
-Explore the Projects section to view details about my projects.
+## Acknowledgements
 
-Credits :
---------
-Credits to bootstrap .
+ - [Bootstrap](https://getbootstrap.com/)
+
+
+## 🔗 Links
+
+ - [My Website](https://portfolio-keor.onrender.com)
+
+
